@@ -1,28 +1,22 @@
 <template>
   <div id="app">
-    <img src="src/assets/brule_2.jpg">
-    
-    <card1></card1>
-     <card2></card2>
-    {{ title }}
-    
+     {{ title }}
+     
+     <board></board> <!-- this is where the board will be displayed -->
   </div>
 </template>
 
+
 <script>
-import Card2 from './components/Card2.vue'
-
-
-
+import Board from './components/Board.vue'
 export default {
   name: 'app',
-  
   components: {
-  'card2': Card2
+  'board': Board
     },
     data () {
       return {
-        title: 'Card Matching Game'
+        title: 'TITLE: Card Matching Game'
       }
     }
 }
